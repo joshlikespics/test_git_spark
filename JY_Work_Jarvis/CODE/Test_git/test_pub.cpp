@@ -12,7 +12,7 @@ New____________________  .h   =============================
 class JoystickEvents
 {
 public:
-    virtual void OnGamePadChanged(const GamePadEventData *evt);
+    virtual void OnGamePadChanged(const GamePad EventData *evt);
     static GamePadEventData mostRecentEvent;
 };
 
@@ -22,7 +22,7 @@ public:
 
 OLD______________________  .cpp   ===========================
 
-void JoystickEvents::OnGamePadChanged(const GamePadEventData *evt)
+void JoystickEvents::OnGamePadChanged(const GamePadEventData *evt)git git
 {
     Serial.print("X: ");
     PrintHex<uint16_t>(evt->x, 0x80);
@@ -50,3 +50,7 @@ void JoystickEvents::OnGamePadChanged(const GamePadEventData *evt)
 {
     mostReventEvent = *evt;
 }
+
+
+
+NEW liine to test updates
